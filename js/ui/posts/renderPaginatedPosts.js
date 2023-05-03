@@ -14,7 +14,7 @@ export default function renderPaginatedPosts() {
 			toggleLoadMoreButton();
 			const posts = await getPosts(offset);
 
-			offset = offset + 5000;
+			offset = offset + 10;
 			renderPosts(posts, container);
 			toggleLoader(container);
 		} catch (error) {
